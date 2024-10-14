@@ -11,7 +11,10 @@ return {
 		nvimtree.setup({
 			view = {
 				adaptive_size = true,
-				width = 65,
+				width = {
+					min = 30, -- Set your desired minimum width here
+					max = 80, -- Optional: Set a maximum width if desired
+				},
 				relativenumber = true,
 			},
 			-- change folder arrow icons
